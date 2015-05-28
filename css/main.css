@@ -36,7 +36,7 @@ h1 {
 	background-size: 100%;
 	width: 1.563em; /*25px/16px = 1.563em*/
 	height: 1.563em; /*25px/16px = 1.563em*/
-	margin: -.35em .35em; /*5px/16px = .35em*/
+	margin: -.325em .35em; /*5px/16px = .325em & .35em*/
 	display: inline-block;
 }
 
@@ -44,10 +44,9 @@ h1 {
 	background: #2960ab;
 	border-radius: 3.125em; /*50px/16px = 3.125em*/
 	color: #fff;
-	padding: 1em; /*16px/16px = 1em*/
+	padding: 1.5em; /*24px/16px = 1.5em*/
 	margin: 1em; /*16px/16px = 1em*/
 	display: inline-block;
-	width: 80%;
 	font-size: .75em;
 	text-align: center;
 	text-decoration: none;
@@ -91,14 +90,14 @@ h1 {
 /*min-width 480px -- 30em*16px*/
 @media only screen and (min-width: 30em) {
 	.button {
-		width: 50%
+		width: 45%
 	}
 }
 
 /*min-width 640px -- 40em*16px*/
 @media only screen and (min-width: 40em) {
 	.button {
-		width: 40%
+		width: 35%
 	}
 
 	.directions {
@@ -117,7 +116,7 @@ h1 {
 /*min-width 1024px -- 64em*16px*/
 @media only screen and (min-width: 64em) {
 	.button {
-		width: 30%
+		width: 25%
 	}
 
 	.iris,
