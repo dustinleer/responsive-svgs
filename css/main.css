@@ -1,3 +1,5 @@
+/*to calculate em units divide pixel units by 16px as it is the default*/
+
 *, *:before, *:after {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -11,40 +13,41 @@ body {
 
 .wrapper {
 	max-width: 80%;
-	margin: 10px auto;
-	padding: 10px 20px;
+	margin: .6255em auto; /*10px/16px = .625em*/
+	padding: .625em 1.25em; /*10px/16px = .625em | 20px/16px = 1.25em*/
 	background: #1E1E1E;
-	border-radius: 8px;
+	border-radius: .35em; /*5px/16px = .35em*/
 }
 
 h1 {
-	margin: 30px 0;
+	font-size: 1.35em; /*21.6px/16px = 1.35em*/
+	margin: .75em 0; /*12px/16px = .75em*/
 	text-align: center;
 }
 
 .buttons {
-	margin: 1em auto;
+	margin: 1em auto; /*16px/16px = 1em*/
 	text-align: center;
 }
 
 .github::before {
 	content: "";
 	background: url(../img/github.svg) no-repeat;
-  background-size: 100%;
-  width: 25px;
-  height: 25px;
-	margin: -.5em .5em;
-  display: inline-block;
+	background-size: 100%;
+	width: 1.563em; /*25px/16px = 1.563em*/
+	height: 1.563em; /*25px/16px = 1.563em*/
+	margin: -.35em .35em; /*5px/16px = .35em*/
+	display: inline-block;
 }
 
 .button {
 	background: #2960ab;
-	border-radius: 50px;
+	border-radius: 3.125em; /*50px/16px = 3.125em*/
 	color: #fff;
-	padding: 1em;
-	margin: 1em;
+	padding: 1em; /*16px/16px = 1em*/
+	margin: 1em; /*16px/16px = 1em*/
 	display: inline-block;
-	width: 60%;
+	width: 80%;
 	font-size: .75em;
 	text-align: center;
 	text-decoration: none;
@@ -64,7 +67,7 @@ h1 {
 }
 
 #explore {
-	margin: 1em auto;
+	margin: 1em auto; /*16px/16px = 1em*/
 	width: 50%;
 	display: block;
 }
@@ -85,12 +88,14 @@ h1 {
 	stroke-width: 10;
 }
 
+/*min-width 480px -- 30em*16px*/
 @media only screen and (min-width: 30em) {
 	.button {
 		width: 50%
 	}
 }
 
+/*min-width 640px -- 40em*16px*/
 @media only screen and (min-width: 40em) {
 	.button {
 		width: 40%
@@ -109,6 +114,7 @@ h1 {
 	}
 }
 
+/*min-width 1024px -- 64em*16px*/
 @media only screen and (min-width: 64em) {
 	.button {
 		width: 30%
