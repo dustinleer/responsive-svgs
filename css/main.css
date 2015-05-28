@@ -22,14 +22,29 @@ h1 {
 	text-align: center;
 }
 
-a {
+.buttons {
+	margin: 1em auto;
+	text-align: center;
+}
+
+.github::before {
+	content: "";
+	background: url(../img/github.svg) no-repeat;
+  background-size: 25px;
+  width: 25px;
+  height: 25px;
+	margin: -.5em .5em;
+  display: inline-block;
+}
+
+.button {
 	background: #2960ab;
 	border-radius: 50px;
 	color: #fff;
 	padding: 1em;
-	margin: 1em auto;
-	display: block;
-	width: 40%;
+	margin: 1em;
+	display: inline-block;
+	width: 20%;
 	font-size: .75em;
 	text-align: center;
 	text-decoration: none;
@@ -37,13 +52,13 @@ a {
 	text-transform: uppercase;
 }
 
-a:hover {
+.button:hover {
 	background: #1188D6;
 	transition: color .3s ease, background .3s ease;
 	-webkit-transition: color .3s ease, background .3s ease;
 }
 
-a:visited {
+.button:visited {
 	transition: color .3s ease, background .3s ease;
 	-webkit-transition: color .3s ease, background .3s ease;
 }
@@ -71,13 +86,13 @@ a:visited {
 }
 
 @media only screen and (min-width: 30em) {
-	a {
+	.button {
 		width: 40%
 	}
 }
 
 @media only screen and (min-width: 40em) {
-	a {
+	.button {
 		width: 30%
 	}
 
@@ -95,7 +110,7 @@ a:visited {
 }
 
 @media only screen and (min-width: 64em) {
-	a {
+	.button {
 		width: 20%
 	}
 
